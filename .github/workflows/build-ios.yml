@@ -30,8 +30,8 @@ jobs:
       - name: Compilar no XCode
         run: |
           cd ios
-          xcodebuild -workspace churrascometro.xcworkspace -schrme churrascometro -configuration Release -sdk iphoneos -derivedDataPath build CODE_SIGNING_ALLOW=NO CODE_SIGNING_REQUIRED=NO
-
+          xcodebuild -workspace churrascometro.xcworkspace -scheme churrascometro -configuration Release -sdk iphoneos -derivedDataPath build CODE_SIGNING_ALLOW_DONT_SAFETY_CHECK_ME=YES CODE_SIGNING_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGN_ENTITLEMENTS="" CODE_SIGN_STYLE=Manual
+      
       - name: Empacotar
         run: |
           mkdir -p Aplicacao
