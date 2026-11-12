@@ -30,7 +30,7 @@ jobs:
       - name: Compilar no XCode
         run: |
           cd ios
-          xcodebuild -workspace churrascometro.xcworkspace -scheme churrascometro -configuration Release -sdk iphoneos -derivedDataPath build CODE_SIGNING_ALLOW=NO CODE_SIGNING_REQUIRED=NO
+          xcodebuild -workspace churrascometro.xcworkspace -scheme churrascometro -configuration Release -sdk iphoneos -derivedDataPath build CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO
       
       - name: Empacotar
         run: |
